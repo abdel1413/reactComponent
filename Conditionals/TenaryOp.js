@@ -1,16 +1,16 @@
 function Won() {
-  return <h1> woow, You won!!!!</h1>;
+  return <h2> woow, You won!!!!</h2>;
 }
 
 function Lost() {
-  return <h1> Ops, you lost !!!</h1>;
+  return <h2> Ops, you lost !!!</h2>;
 }
 
 function Kick(props) {
   let goal = props.isGoal;
   return (
     <>
-      <h1>Using tenary operator</h1>
+      <p>Using tenary operator</p>
       {goal ? <Won /> : <Lost />}
     </>
   );
