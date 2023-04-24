@@ -15,12 +15,25 @@ code {
     monospace;
 }
 
-p {
+h2 {
   color: rgb(184, 109, 109);
+}
+p {
+  color: green;
   font-weight: bold;
   /* background-color: lightseagreen; */
 }
 
 .carLength {
   color: green;
+}
+div > .log-op,
+div > .tenary-op,
+div > .if-statement,
+div > .prop-as-arg,
+div > .prop-to-another-comp,
+div > .all-another-comp {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 15px;
 }

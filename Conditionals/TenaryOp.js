@@ -1,18 +1,18 @@
 function Won() {
-  return <h2> woow, You won!!!!</h2>;
+  return <p> woow, You won!!!!</p>;
 }
 
 function Lost() {
-  return <h2> Ops, you lost !!!</h2>;
+  return <p> Ops, you lost !!!</p>;
 }
 
 function Kick(props) {
   let goal = props.isGoal;
   return (
-    <>
-      <p>Using tenary operator</p>
+    <div className="tenary-op">
+      <h2>Using tenary operator</h2>
       {goal ? <Won /> : <Lost />}
-    </>
+    </div>
   );
 }
 

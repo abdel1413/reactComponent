@@ -3,14 +3,17 @@ function Parking(props) {
   console.log("cars", cars);
 
   return (
-    <>
-      <h1> logic && operator</h1>
-      <p> It returns an h1 tag if the length of car is greather than 0</p>
-      <h1> In you Garage,</h1>
+    <div className="log-op">
+      <h2> Using logic && operator</h2>
+      <h3>
+        {" "}
+        It returns a p tag if the length of car is greather than 0 otherwis
+        nothing will display on the screen
+      </h3>
       {cars.length > 0 && (
-        <h1 className="carLength">you have {cars.length} in your parking;</h1>
+        <p className="carLength">you have {cars.length} in your parking;</p>
       )}
-    </>
+    </div>
   );
 }
 

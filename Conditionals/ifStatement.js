@@ -1,18 +1,28 @@
 function Goal() {
-  return <h1>Goaallll!!!!!!</h1>;
+  return <p>Goaallll!!!!!!</p>;
 }
 
 function Missed() {
-  return <h1>Ops! Your Missed it! </h1>;
+  return <p>Ops! Your Missed it! </p>;
 }
 
 function Shooting(props) {
   let isGoal = props.isGoal;
   console.log(isGoal);
   if (isGoal) {
-    return <Goal />;
+    return (
+      <div className="if-statement">
+        <h2>Using if statement condition:</h2>
+        <Goal />
+      </div>
+    );
   }
-  return <Missed />;
+  return (
+    <div className="if-statement">
+      <h2>Using if statement condition:</h2>
+      <Missed />{" "}
+    </div>
+  );
 }
 
 export default Shooting;
