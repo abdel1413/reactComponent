@@ -15,6 +15,7 @@ import Football from "./Events/onClickEvent";
 import Shooting from "./Conditionals/ifStatement";
 import Parking from "./Conditionals/LogicalAndOperator";
 import Kick from "./Conditionals/TenaryOp";
+import GarageCars from "./Lists";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let cars = ["Toyota", "BMW", "Ford", "Hyndai"];
@@ -34,5 +35,6 @@ root.render(
     <Shooting isGoal={false} />
     <Parking mycars={cars} />
     <Kick isGoal={true} />
+    <GarageCars />
   </React.StrictMode>
 );
